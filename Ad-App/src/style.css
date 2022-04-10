@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body,html {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.flex-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px auto;
+  background-color: #DDDDDD;
+}
+.form-group{
+  margin:20px;
+}
+.form-group label{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FF5F00;
+  display: block;
+}
+.form-group input{
+  display: block;
+  border: 1px solid #06113C;
+  padding:5px;
+  font-family: 'roboto';
+  transition:0.2s ease-in-out;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.form-group input:focus{
+  outline: 3px solid #00092C ;
+}
+.btn-submit{
+  padding:15px 25px;
+  background-color: #FF8C32;
+  border:0px;
+  color:#06113C;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  margin: 20px auto;
+  font-size:16px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:all 0.2s ease-in-out;
+}
+.btn-submit:hover{
+  background-color: transparent;
+  border: 1px solid #00092C;
+}
+/* home page */
+.hero-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #DDDDDD;
+}
+.hero-content{
+    text-align: center;
+}
+.hero-content h1{
+    font-weight: 600;
+    font-size: 42px;
+    font-family: 'Roboto';
+    color: #FF5F00;
+}
+.hero-content a{
+    padding:20px 30px;
+    background-color: #FF5F00;
+    color:#06113C;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-weight: 600;
+}
+.ad-cards{
+    padding:40px;
+    background-color: #EEEEEE;
+}
+.cards-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(20% - 1em);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #FF5F00;
+    background-color: #DDDDDD;
+}
+.btn-delete{
+    position: absolute;
+    top:-14px;
+    right:-30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #733C3C;
+    background-color: #B20600;
+    color:#DDDDDD;
+    padding:3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    max-height: 70%;
+    border-radius: 7px;
+}
+.card h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #06113C;
+}
+.card p{
+    font-size: 18px;
+    font-family: 'roboto';
+    color:#00092C;
+}
+.card span{
+    display: block;
+    margin-bottom: 10px;
+    color: #FF5F00;
+}
+.card span em{
+    font-weight: 600;
+}
+.priceTag{
+    font-family: 'roboto';
+    font-weight: 600;
+    font-size: 26px;
+}
+/* end homepage */
+/* navbar */
+.navbar{
+    height: 80px;
+    background-color: #FF8C32;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-style: italic;
+    text-decoration: none;
+    color:#06113C;
+    font-weight: 600;
+    font-size: 32px;
+}
+.nav-items{
+    list-style: none;
+}
+.nav-items .nav-item a{
+    text-decoration: none;
+    font-size: 19px;
+    color: #06113C;
+    font-family: Roboto;
+}
+.nav-item strong{
+    color: #733C3C;
+    font-family: 'roboto';
+    font-size: 22px;
+}
+.btn-logout{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #733C3C;
+    background-color: #B20600;
+    color:#DDDDDD;
+    padding:3px 10px;
+    border-radius: 5px;
+}
+
+/* end navbar */
+/* footer */
+.footer{
+    height: 80px;
+    display: flex;
+    background-color: #06113C;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    color: #FF8C32;
+    font-family: 'roboto';
+}
+/* end footer */
+.alert-box{
+    padding:10px 20px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #06113C;
+    position: fixed;
+    bottom: 70px;
+    right:50px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'roboto';
+}
+@media only screen and(min-width: 1200px){
+.container {
+    max-width: 1140px;
+}
+}
+@media only screen and(min-width: 992px){
+  .container {
+      max-width: 960px;
+  }
+  }
+  @media only screen and(min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+    }
+    @media only screen and(min-width: 567px){
+      .container {
+          max-width: 540px;
+      }
+}
